@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background: azure;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: linear-gradient(45deg, cornsilk, azure,cornsilk);
+}
+.section {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.section .group {
+    width: 24%;
+    position: relative;
+    height: 300px;
+    background: navy;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section .group a {
+    text-decoration: none;
+    color: black;
+}

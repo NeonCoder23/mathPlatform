@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background: #000016;
+}
+.container {
+    width: 100%;
+    position: relative;
+}
+.container h1 {
+    text-align: center;
+    color: azure;
+    font-size: 38px;
+}
+.container button[clear]{
+    color: azure;
+    background: transparent;
+    border: 1px solid silver;
+    border-radius: 2px;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+}
+.container .addData {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.addData form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.addData form p {
+    color: azure;
+    font-size: 20px;
+}
+.addData form input {
+    background: transparent;
+    font-size: 18px;
+    color: azure;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 1px rgba(192, 192, 192, 0.28);
+}
+.addData form button {
+    background: transparent;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 2px;
+    text-align: center;
+    color: azure;
+    font-size: 18px;
+}
+
+.pupils {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+}
+.pupils .infoContainer{
+    position: relative;
+    width: 100%;
+}
+.pupils .infoContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.pupils .infoContainer table th, td {
+    border: 1.5px solid #ccc;
+    background: var(--clr);
+}
+.pupils .infoContainer table td {
+    background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgclr.lime {
+    background: lime;
+}
+.bgclr.red {
+    background: red;
+}
