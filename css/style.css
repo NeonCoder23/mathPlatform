@@ -17,7 +17,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
     background: linear-gradient(45deg, cornsilk, azure,cornsilk);
 }
 .section {
@@ -26,15 +25,10 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 .section .group {
-    width: 24%;
     position: relative;
-    height: 300px;
-    background: navy;
-    padding: 20px;
+    background: rgba(0, 0, 128, 0.386);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,4 +36,46 @@ body {
 .section .group a {
     text-decoration: none;
     color: black;
+}
+@media (min-width:1024px){
+    .navbar {
+        padding: 15px;
+    }
+    .section {
+        gap: 10px;
+        flex-direction: row;
+    }
+    .section .group {
+        width: 24%;
+        height: 300px;
+        padding: 20px;
+    }
+}
+@media (max-width:1023px){
+    .navbar {
+        padding: 10px;
+    }
+    .section {
+        gap: 10px;
+        flex-direction: row;
+    }
+    .section .group {
+        width: 180px; /* 720 / 4 = 180*/
+        height: 250px;
+        padding: 15px;
+    }
+}
+@media (max-width:720px){
+    .navbar {
+        padding: 10px;
+    }
+    .section {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .section .group {
+        width: 90%;
+        height: 180px;
+        padding: 15px;
+    }
 }
